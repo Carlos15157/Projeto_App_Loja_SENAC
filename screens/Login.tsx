@@ -27,7 +27,7 @@ export default function Login({ navigation }) {
   return (
     <View style={estilo.area}>
       <ImageBackground
-        source={require("../assets/images/fundoalternativo.jpg")}
+        source={require("../assets/images/fundo_nike.png")}
         style={estilo.fundo}
       >
         <Image
@@ -67,7 +67,7 @@ export default function Login({ navigation }) {
           style={estilo.cadastrar}
           onPress={() => navigation.navigate("Cadastrar")}
         >
-          <Text style={estilo.txtCadastrar}> Cadastrar </Text>
+          <Text style={estilo.txtLogar}> Cadastrar </Text>
         </TouchableOpacity>
       </ImageBackground>
     </View>
@@ -114,7 +114,7 @@ const estilo = StyleSheet.create({
     marginLeft: "auto",
     marginRight: "auto",
     marginTop: 55,
-    borderColor: "white",
+    borderColor: "black",
     borderRadius: 25,
     borderWidth: 3,
   },
@@ -133,7 +133,7 @@ const estilo = StyleSheet.create({
     marginLeft: "auto",
     marginRight: "auto",
     //marginTop:
-    borderColor: "#ffffff",
+    borderColor: "black",
     borderWidth: 3,
     borderRadius: 25,
   },

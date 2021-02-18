@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Text, View } from "../components/Themed";
 import Carousel from "@khanshamshad32/carousel";
-import { ActivityIndicator, Image, StyleSheet, RefreshControl } from "react-native";
+import { ActivityIndicator, Image, StyleSheet } from "react-native";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import {host} from '../config/host';
 import * as SQLite from "expo-sqlite";
@@ -76,23 +76,6 @@ export default function DetalheProduto({ route }) {
     </View>
   );
 }
-const wait = (timeout) => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, timeout);
-  });
-};
-
-
-function ItensCarrinho(){
-  const [produtos, setProdutos] = React.useState([]);
-  const [carregando,setCarregando] = React.useState(true);
-
-
-
-//---vamos criar uma constante para realizar o refresh(atualização)
-
-const [refreshing, setRefreshing] = React.useState(false);
-
 const tela = StyleSheet.create({
   img: {
     width: 200,
